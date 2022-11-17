@@ -1,7 +1,8 @@
-name: A simple Docker action
+name: labelme
 on:
   issues:
     types: [opened, edited, labeled]
+  workflow_dispatch:
 jobs:
   user-and-time:
     runs-on: ubuntu-latest
